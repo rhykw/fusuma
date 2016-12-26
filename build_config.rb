@@ -17,6 +17,8 @@ MRuby::Build.new do |conf|
   conf.enable_test
 
   conf.gembox 'default'
+
+  conf.gem :github => 'iij/mruby-mtest'
   gem_config(conf)
 end
 
