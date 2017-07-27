@@ -16,5 +16,7 @@ addons:
       - gperf
       - libfuse-dev
 
+before_script:
+  - cp -fp .travis_build_config.rb build_config.rb
 script:
   - rake test
